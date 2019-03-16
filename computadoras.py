@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-#import json
+import json
+import re
 
 url_base = "https://www.smartprix.com/laptops/"
 urls = [url_base]
@@ -20,6 +21,7 @@ for pagina in urls:
 		r = requests.get(pagina)
 		r.encoding = "utf-8"
 	except Exception as e:
+		print("break")
 		break
 
 	soup = BeautifulSoup(r.text, "html.parser")
@@ -46,12 +48,34 @@ for pagina in urls:
 
 			compu["especi"] = n_especific
 
+			print()
+			proce_encontrado = False
+			storage_encontrado = False
+			for i in n_especific:
+				if re.search("Intel.Apollo|Intel.Atom|Intel.Celeron|Intel.Core.M|Intel.Core.i\d|Intel.Pentium|AMD|Xeon|itanium|Ryzen", i, re.IGNORECASE) and proce_encontrado == False:
+					proce_encontrado = True
+					print("Procesador:", i)
+					continue
+				if re.search("RAM", i, re.IGNORECASE):
+					print("Ram:", i)
+					continue
+				if re.search("windows|apple|linux|chrome|dos|mac|ubuntu", i, re.IGNORECASE):
+					print("Sistema operativo:", i)
+					continue
+				if re.search("hard.disk|SSD", i, re.IGNORECASE) and storage_encontrado == False:
+					print("Almacenamiento:", i)
+					storage_encontrado = True
+					continue
+			print()
+
 			lista.append(compu)
 			print(compu)
 	contador += 1
 
 print(len(lista))
 
+with open("computadoras.json", "w") as archivo:
+    json.dump(lista, archivo, sort_keys=False, indent=4)
 
 
 
