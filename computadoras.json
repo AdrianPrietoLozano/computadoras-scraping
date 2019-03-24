@@ -1,642 +1,716 @@
 [
     {
+        "nombre": "Dell Alienware Area-51M Gaming Laptop (9th Gen Ci9/ 32GB/ 1TB 512GB SSD/ Win10 Home)",
+        "marca": "Dell",
+        "precio": "299999",
+        "imagen": "https://cdn1.smartprix.com/rx-iprB513e4-w103-h125/dell-alienware-area.jpg",
+        "nombre_procesador": "Intel Core i9 9th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 32,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
         "nombre": "HP 15q-by002ax (2TZ85PA) Notebook (APU Dual Core A9/ 4GB/ 1TB/ WIn10/ 2GB Graph)",
         "marca": "HP",
         "precio": "23490",
         "imagen": "https://cdn1.smartprix.com/rx-ie6FhNWD0-w103-h125/hp-15q-by002ax-2tz85.jpg",
-        "especi": [
-            "AMD A9 APU",
-            "Dual Core 3 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "2 GB AMD Graphics Card",
-            "15.6 inches, 1366 x 768 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "nombre_procesador": "AMD A9 APU",
+        "marca_procesador": "amd",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "HP 15-da0352tu (5XD50PA) Notebook (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
+        "marca": "HP",
+        "precio": "32490",
+        "imagen": "https://cdn1.smartprix.com/rx-iGDRWdXnk-w103-h125/hp-15-da0352tu-5xd50.jpg",
+        "nombre_procesador": "Intel Core i3 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Asus X505ZA-EJ274T Laptop (Ryzen 5 Quad Core/ 8GB/ 1TB/ Win10)",
+        "marca": "Asus",
+        "precio": "33499",
+        "imagen": "https://cdn1.smartprix.com/rx-iJLY0g0cv-w103-h125/asus-x505za-ej274t-l.jpg",
+        "nombre_procesador": " Ryzen 5",
+        "marca_procesador": "ryzen",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
         "nombre": "Dell Vostro 3578 Laptop (8th Gen Ci5/ 8GB/ 1TB/ Win10 Home/ 2GB Graph)",
         "marca": "Dell",
         "precio": "45256",
         "imagen": "https://cdn1.smartprix.com/rx-ilTayPuz2-w103-h125/dell-vostro-3578-lap.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "2 GB AMD Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Asus ZenBook Pro UX580GE-E2014T Laptop (8th Gen Ci7/ 16GB/ 1TB SSD/ Win10 Home/ 4GB Graph)",
-        "marca": "Asus",
-        "precio": "181890",
-        "imagen": "https://cdn1.smartprix.com/rx-iBT2kLase-w103-h125/asus-zenbook-pro-ux5.jpg",
-        "especi": [
-            "Intel Core i7 8th Gen",
-            "Hexa Core 2.2 GHz Clock Speed",
-            "16 GB DDR4 RAM",
-            "1 TB SSD",
-            "4 GB NVIDIA Graphics Card",
-            "15.6 inches, 3840 x 2160 pixels, Touch Screen",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Lenovo Ideapad 330 (81DC00LBIN) Laptop (7th Gen Ci3/ 8GB/ 1TB/ Win10)",
-        "marca": "Lenovo",
-        "precio": "33499",
-        "imagen": "https://cdn1.smartprix.com/rx-ixeYzY3Gg-w103-h125/lenovo-ideapad-330-8.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "Dual Core 2.4 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Intel HD Graphics 620",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "HP 15-bs669tu (5KN56PA) Notebook (7th Gen Ci5/ 4GB/ 1TB/ Win10)",
-        "marca": "HP",
-        "precio": "36999",
-        "imagen": "https://cdn1.smartprix.com/rx-i488dL97I-w103-h125/hp-15-bs669tu-5kn56p.jpg",
-        "especi": [
-            "Intel Core i5 7th Gen",
-            "Dual Core 2.5 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Intel HD Graphics 620",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
         "nombre": "Asus ROG Strix GL503GE-EN270T Laptop (8th Gen Core i7/ 16GB/ 1TB 256GB SSD/ Win10 Home/ 4GB Graph)",
         "marca": "Asus",
-        "precio": "84990",
+        "precio": "109990",
         "imagen": "https://cdn1.smartprix.com/rx-iq6Q08ccN-w103-h125/asus-rog-strix-gl503.jpg",
-        "especi": [
-            "Intel Core i7 8th Gen",
-            "Hexa Core 2.2 GHz Clock Speed",
-            "16 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "256 GB SSD",
-            "4 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS"
-        ]
+        "nombre_procesador": "Intel Core i7 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 16,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "HP 15-da0352tu (5XD50PA) Notebook (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
-        "marca": "HP",
-        "precio": "34500",
-        "imagen": "https://cdn1.smartprix.com/rx-iGDRWdXnk-w103-h125/hp-15-da0352tu-5xd50.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "Dual Core 2.3 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Intel HD Graphics 620",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "nombre": "Lenovo Ideapad 330 (81D600CMIN) Laptop (AMD Dual Core A4/ 4GB/ 1TB/ Win10)",
+        "marca": "Lenovo",
+        "precio": "19940",
+        "imagen": "https://cdn1.smartprix.com/rx-iiJYbkhjK-w103-h125/lenovo-ideapad-330-8.jpg",
+        "nombre_procesador": " AMD A4-9125",
+        "marca_procesador": "amd",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Dell Inspiron 3567 Notebook (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
+        "marca": "Dell",
+        "precio": "29999",
+        "imagen": "https://cdn1.smartprix.com/rx-iI4NGSxRx-w103-h125/dell-inspiron-3567-n.jpg",
+        "nombre_procesador": "Intel Core i3 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
         "nombre": "Dell Inspiron 5480 laptop (8th Gen Ci3/ 4GB/ 1TB/ Win10)",
         "marca": "Dell",
         "precio": "36990",
         "imagen": "https://cdn1.smartprix.com/rx-iZJe7kkyL-w103-h125/dell-inspiron-5480-l.jpg",
-        "especi": [
-            "Intel Core i3 8th Gen",
-            "Dual Core 2.1 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Intel UHD Graphics 620",
-            "14 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "nombre_procesador": "Intel Core i3 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "Dell Alienware Area-51M Gaming Laptop (9th Gen Ci9/ 32GB/ 1TB 512GB SSD/ Win10 Home)",
-        "marca": "Dell",
-        "precio": "299999",
-        "imagen": "https://cdn1.smartprix.com/rx-iprB513e4-w103-h125/dell-alienware-area.jpg",
-        "especi": [
-            "Intel Core i9 9th Gen",
-            "Octa Core 3.6 GHz Clock Speed",
-            "32 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "512 GB SSD",
-            "NVIDIA GeForce GTX 1080",
-            "17.3 inches, 1920 x 1080 pixels",
-            "Windows 10 OS"
-        ]
-    },
-    {
-        "nombre": "Asus X505ZA-EJ274T Laptop (Ryzen 5 Quad Core/ 8GB/ 1TB/ Win10)",
-        "marca": "Asus",
-        "precio": "33490",
-        "imagen": "https://cdn1.smartprix.com/rx-iJLY0g0cv-w103-h125/asus-x505za-ej274t-l.jpg",
-        "especi": [
-            " Ryzen 5",
-            "Quad Core 2 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "AMD Radeon",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "HP 15-DA0434TX (5CP03PA) Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10/ 2GB Graph)",
+        "nombre": "HP 15-bs669tu (5KN56PA) Notebook (7th Gen Ci5/ 4GB/ 1TB/ Win10)",
         "marca": "HP",
-        "precio": "37990",
-        "imagen": "https://cdn1.smartprix.com/rx-ik1nHbkUJ-w103-h125/hp-15-da0434tx-5cp03.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "Dual Core 2.4 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "2 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "precio": "36999",
+        "imagen": "https://cdn1.smartprix.com/rx-i488dL97I-w103-h125/hp-15-bs669tu-5kn56p.jpg",
+        "nombre_procesador": "Intel Core i5 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "HP 15q-dy0004AU (5JS20PA) Laptop (AMD Ryzen 3/ 4GB/ 1TB/ Win10)",
-        "marca": "HP",
-        "precio": "28900",
-        "imagen": "https://cdn1.smartprix.com/rx-iwOTRylGO-w103-h125/hp-15q-dy0004au-5js2.jpg",
-        "especi": [
-            " AMD Ryzen 3",
-            "Dual Core 2.5 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Radeon Vega 3 Graphics",
-            "15.6 inches, 1366 x 768 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Lenovo Ideapad 330-15IKB (81DE0088IN) Laptop (8th Gen Ci5/ 8GB/ 2TB/ FreeDOS/ 2GB Graph)",
+        "nombre": "Lenovo Ideapad 330 (81DC00TFIN) Laptop(6th Gen Core i3/ 4GB/ 1TB/ FreeDOS)",
         "marca": "Lenovo",
-        "precio": "45899",
-        "imagen": "https://cdn1.smartprix.com/rx-ilaJvW9nL-w103-h125/lenovo-ideapad-330-1.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "2 TB Hard Disk",
-            "2 GB AMD Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "DOS OS",
-            "1 Year Warranty"
-        ]
+        "precio": "23990",
+        "imagen": "https://cdn1.smartprix.com/rx-isM5tJFWp-w103-h125/lenovo-ideapad-330-8.jpg",
+        "nombre_procesador": "Intel Core i3 6th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "dos"
     },
     {
         "nombre": "Acer Aspire 5 A515-52G (NX.H14SI.002) Laptop (8th Gen Ci5/ 8GB/ 1TB/ Win10/ 2GB Graph)",
         "marca": "Acer",
         "precio": "49990",
         "imagen": "https://cdn1.smartprix.com/rx-inwqOTZrV-w103-h125/acer-aspire-5-a515-5.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "2 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "Huawei MateBook 13 Laptop (8th Gen Ci5/ 8GB/ 256GB SSD/ Win10)",
-        "marca": "Huawei",
-        "precio": "71999",
-        "imagen": "https://cdn1.smartprix.com/rx-i8BdI59HH-w103-h125/huawei-matebook-13-l.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "256 GB SSD",
-            "Intel UHD Graphics 620",
-            "13 inches, 2160 x 1440 pixels, Touch Screen",
-            "Windows 10 OS",
-            "Backlit Keyboard"
-        ]
-    },
-    {
-        "nombre": "HP 15-da0327tu (5AY25PA) Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
-        "marca": "HP",
-        "precio": "31990",
-        "imagen": "https://cdn1.smartprix.com/rx-iUVB4su5o-w103-h125/hp-15-da0327tu-5ay25.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "2.4 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Intel HD 620",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "2 USB 3.0 Ports"
-        ]
-    },
-    {
-        "nombre": "HP 15-da0326tu (5AY34PA) Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
-        "marca": "HP",
-        "precio": "30799",
-        "imagen": "https://cdn1.smartprix.com/rx-iNsKrEQ0N-w103-h125/hp-15-da0326tu-5ay34.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "Dual Core 2.4 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Intel Integrated HD 620",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Lenovo Ideapad 330 (81D20090IN) Laptop (Ryzen 3 Dual Core/ 4GB/ 1TB/ Win10 Home)",
+        "nombre": "Lenovo Ideapad 530s (81EV00BPIN) Laptop (8th Gen Core i5/ 8GB/ 512GB SSD/ Win10)",
         "marca": "Lenovo",
-        "precio": "23990",
-        "imagen": "https://cdn1.smartprix.com/rx-i4jzBYXZN-w103-h125/lenovo-ideapad-330-8.jpg",
-        "especi": [
-            " Ryzen 3",
-            "Dual Core 2.5 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "AMD Radeon Vega 3",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "precio": "63925",
+        "imagen": "https://cdn1.smartprix.com/rx-iPugfoXl4-w103-h125/lenovo-ideapad-530s.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 512,
+        "so": "windows"
+    },
+    {
+        "nombre": "Lenovo Ideapad 330 (81DC00LBIN) Laptop (7th Gen Ci3/ 8GB/ 1TB/ Win10)",
+        "marca": "Lenovo",
+        "precio": "34990",
+        "imagen": "https://cdn1.smartprix.com/rx-ixeYzY3Gg-w103-h125/lenovo-ideapad-330-8.jpg",
+        "nombre_procesador": "Intel Core i3 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "HP 15-da0077tx (4TT02PA) Notebook (8th Gen Ci5/ 8GB/ 1TB/ FreeDOS/ 2GB Graph)",
+        "marca": "HP",
+        "precio": "46990",
+        "imagen": "https://cdn1.smartprix.com/rx-ipKSaXlYu-w103-h125/hp-15-da0077tx-4tt02.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "dos"
+    },
+    {
+        "nombre": "HP 245 G5 (Y0T72PA) Laptop (AMD A6/ 4GB/ 500GB/ FreeDOS)",
+        "marca": "HP",
+        "precio": "18490",
+        "imagen": "https://cdn1.smartprix.com/rx-ivYysTPG8-w103-h125/hp-245-g5-y0t72pa-la.jpg",
+        "nombre_procesador": "AMD APU A6",
+        "marca_procesador": "amd",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr3",
+        "almacenamiento": 500,
+        "so": "dos"
+    },
+    {
+        "nombre": "Asus Vivobook X507UF-EJ102T Laptop (8th Gen Ci5/ 8GB/ 256GB SSD/ Win10/ 2GB Graph)",
+        "marca": "Asus",
+        "precio": "48884",
+        "imagen": "https://cdn1.smartprix.com/rx-igfwisHAP-w103-h125/asus-vivobook-x507uf.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 256,
+        "so": "windows"
+    },
+    {
+        "nombre": "Dell Inspiron 3576 Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10/ 2GB Graph)",
+        "marca": "Dell",
+        "precio": "35715",
+        "imagen": "https://cdn1.smartprix.com/rx-iBSxeNgIW-w103-h125/dell-inspiron-3576-l.jpg",
+        "nombre_procesador": "Intel Core i3 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
         "nombre": "HP Pavilion x360 14-cd0077tu Laptop (8th Gen Ci3/ 4GB/ 1TB 8GB SSD/ Win10 Home)",
         "marca": "HP",
         "precio": "45099",
         "imagen": "https://cdn1.smartprix.com/rx-ijYNplHJ6-w103-h125/hp-pavilion-x360-14.jpg",
-        "especi": [
-            "Intel Core i3 8th Gen",
-            "2.2 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "8 GB SSD",
-            "Intel Integrated UHD 620",
-            "14 inches, 1920 x 1080 pixels, Touch Screen",
-            "Windows 10 OS"
-        ]
+        "nombre_procesador": "Intel Core i3 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "HP 245 G6 (2UE06PA) Laptop (7th Gen AMD A9/ 4GB/ 1TB/ FreeDOS)",
-        "marca": "HP",
-        "precio": "25500",
-        "imagen": "https://cdn1.smartprix.com/rx-iJMw7eP9L-w103-h125/hp-245-g6-2ue06pa-la.jpg",
-        "especi": [
-            "AMD A9 7th Gen",
-            "Dual Core 2.9 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "AMD Radeon R5",
-            "14 inches, 1366 x 768 pixels",
-            "DOS OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Lenovo Ideapad C340 Laptop (8th Gen Core i5/ 8GB/ 512GB SSD/ Win10)",
-        "marca": "Lenovo",
-        "precio": "48299",
-        "imagen": "https://cdn1.smartprix.com/rx-iCeZUjlJX-w103-h125/lenovo-ideapad-c340.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "512 GB SSD",
-            "Intel UHD 620",
-            "15.6 inches, 1920 x 1080 pixels, Touch Screen",
-            "Windows 10 OS",
-            "2 USB 3.0 Ports"
-        ]
-    },
-    {
-        "nombre": "Lenovo Ideapad 530s (81EV00BPIN) Laptop (8th Gen Core i5/ 8GB/ 512GB SSD/ Win10)",
-        "marca": "Lenovo",
-        "precio": "63700",
-        "imagen": "https://cdn1.smartprix.com/rx-iPugfoXl4-w103-h125/lenovo-ideapad-530s.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "512 GB SSD",
-            "2 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Asus Vivobook X507UF-EJ102T Laptop (8th Gen Ci5/ 8GB/ 256GB SSD/ Win10/ 2GB Graph)",
-        "marca": "Asus",
-        "precio": "49500",
-        "imagen": "https://cdn1.smartprix.com/rx-igfwisHAP-w103-h125/asus-vivobook-x507uf.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "256 GB SSD",
-            "2 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Dell Alienware M15 Laptop (8th Gen Ci7/ 16GB/ 1TB/ Win10/ 8GB Graph)",
+        "nombre": "Dell Inspiron 5570 Laptop (8th Gen Ci5/ 8GB/ 1TB/ Win10 Home)",
         "marca": "Dell",
-        "precio": "119000",
-        "imagen": "https://cdn1.smartprix.com/rx-i2D4mxVEY-w103-h125/dell-alienware-m15-l.jpg",
-        "especi": [
-            "Intel Core i7 8th Gen",
-            "Hexa Core 2.2 GHz Clock Speed",
-            "16 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "8 GB Nvidia\u2019s Graphics Card",
-            "15.6 inches, 3480 x 2160 pixels",
-            "Windows 10 OS",
-            "Backlit Keyboard"
-        ]
+        "precio": "45990",
+        "imagen": "https://cdn1.smartprix.com/rx-i9edtkOET-w103-h125/dell-inspiron-5570-l.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "HP 15-da0077tx (4TT02PA) Notebook (8th Gen Ci5/ 8GB/ 1TB/ FreeDOS/ 2GB Graph)",
-        "marca": "HP",
-        "precio": "47840",
-        "imagen": "https://cdn1.smartprix.com/rx-ipKSaXlYu-w103-h125/hp-15-da0077tx-4tt02.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "2 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "DOS OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Acer Switch One SW110-1CT (UT.709SI.001) Laptop (Atom Quad Core/ 2GB/ 32GB eMMC/ Win10)",
-        "marca": "Acer",
-        "precio": "12990",
-        "imagen": "https://cdn1.smartprix.com/rx-ivm8RJnaT-w103-h125/acer-switch-one-sw11.jpg",
-        "especi": [
-            "Intel Atom",
-            "Quad Core 1.4 GHz Clock Speed",
-            "2 GB DDR3 RAM",
-            "32 GB Hard Disk",
-            "Intel HD 400",
-            "10.1 inches, 1280 x 800 pixels, Touch Screen",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "HP 245 G5 (Y0T72PA) Laptop (AMD A6/ 4GB/ 500GB/ FreeDOS)",
-        "marca": "HP",
-        "precio": "18700",
-        "imagen": "https://cdn1.smartprix.com/rx-ivYysTPG8-w103-h125/hp-245-g5-y0t72pa-la.jpg",
-        "especi": [
-            "AMD APU A6",
-            "Quad Core 2.2 GHz Clock Speed",
-            "4 GB DDR3 RAM",
-            "500 GB Hard Disk",
-            "AMD Radeon R4",
-            "14 inches, 1366 x 768 pixels",
-            "DOS OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Dell Inspiron 7559 (Y567503HIN9) Laptop (6th Gen Intel Ci7/ 16GB/ 1TB/ Win10/ 4GB Graph)",
+        "nombre": "Dell Alienware 17 Laptop (8th Gen Ci9/ 32GB/ 1TB SSD/ Win10 Home/ 8GB Graph)",
         "marca": "Dell",
-        "precio": "85990",
-        "imagen": "https://cdn1.smartprix.com/rx-ioYUoiwzN-w103-h125/dell-inspiron-7559-y.jpg",
-        "especi": [
-            "Intel Core i7 6th Gen",
-            "2.6 GHz Clock Speed",
-            "16 GB DDR3 RAM",
-            "1 TB Hard Disk",
-            "128 GB SSD",
-            "4 GB NVIDIA Graphics Card",
-            "15.6 inches, 3840 x 2160 pixels, Touch Screen",
-            "Windows 10 OS"
-        ]
+        "precio": "349817",
+        "imagen": "https://cdn1.smartprix.com/rx-ixHNLGlbe-w103-h125/dell-alienware-17-la.jpg",
+        "nombre_procesador": "Intel Core i9 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 32,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "Asus ROG Mothership GZ700GX Gaming Laptop (8th Gen Core i9/ 64GB/ 512GB SSD/ Win10/ 8GB Graph)",
-        "marca": "Asus",
-        "precio": "349999",
-        "imagen": "https://cdn1.smartprix.com/rx-ip16Lnt9k-w103-h125/asus-rog-mothership.jpg",
-        "especi": [
-            "Intel Core i9 8th Gen",
-            "Hexa Core 2.9 GHz Clock Speed",
-            "64 GB DDR4 RAM",
-            "512 GB SSD",
-            "8 GB NVIDIA Graphics Card",
-            "17.3 inches, 1920 x 1080 pixels, Touch Screen",
-            "Windows 10 OS",
-            "Backlit Keyboard"
-        ]
+        "nombre": "Dell G7 15 7590 Laptop (8th Gen Ci7/ 16GB/ 1TB/ Win10/ 6GB Graph)",
+        "marca": "Dell",
+        "precio": "89999",
+        "imagen": "https://cdn1.smartprix.com/rx-ijONLUSEA-w103-h125/dell-g7-15-7590-lapt.jpg",
+        "capacidad_ram": 16,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "Acer Aspire 3 A315-53 (NX.H38SI.002) Laptop (8th Gen Ci3/ 4GB/ 1TB/ Win10 Home)",
-        "marca": "Acer",
-        "precio": "31990",
-        "imagen": "https://cdn1.smartprix.com/rx-iOWoDnUwb-w103-h125/acer-aspire-3-a315-5.jpg",
-        "especi": [
-            "Intel Core i3 8th Gen",
-            "Dual Core 2.2 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Intel Integrated UHD 620",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "nombre": "Dell G5 15 5590 Laptop (8th Gen Ci7/ 16GB/ 1TB/ Win10/ 6GB Graph)",
+        "marca": "Dell",
+        "precio": "84999",
+        "imagen": "https://cdn1.smartprix.com/rx-ii3kpwuHt-w103-h125/dell-g5-15-5590-lapt.jpg",
+        "capacidad_ram": 16,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "Acer Nitro 5 AN515-41 (UN.Q2USI.001) Laptop (7th Gen AMD Quad Core FX/ 8GB/ 1TB/ Win10/ 4GB Graph)",
-        "marca": "Acer",
-        "precio": "50499",
-        "imagen": "https://cdn1.smartprix.com/rx-iWn45tiYj-w103-h125/acer-nitro-5-an515-4.jpg",
-        "especi": [
-            " AMD FX-9830P 7th Gen",
-            "Quad Core 3 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "4 GB AMD Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Asus F570ZD-DM226T Laptop (Ryzen 5 Quad Core/ 8GB/ 1TB/ Win10/ 4GB Graph)",
-        "marca": "Asus",
-        "precio": "53400",
-        "imagen": "https://cdn1.smartprix.com/rx-iNkYmtvZh-w103-h125/asus-f570zd-dm226t-l.jpg",
-        "especi": [
-            " Ryzen 5",
-            "Quad Core 2 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "4 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1200 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "nombre": "Huawei MateBook 13 Laptop (8th Gen Ci5/ 8GB/ 256GB SSD/ Win10)",
+        "marca": "Huawei",
+        "precio": "71999",
+        "imagen": "https://cdn1.smartprix.com/rx-i8BdI59HH-w103-h125/huawei-matebook-13-l.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 256,
+        "so": "windows"
     },
     {
         "nombre": "Lenovo ThinkPad L390 Yoga Laptop (8th Gen Ci7/ 16GB 512GB SSD/ Win10 Pro)",
         "marca": "Lenovo",
         "precio": "79999",
         "imagen": "https://cdn1.smartprix.com/rx-iiBzH3S6D-w103-h125/lenovo-thinkpad-l390.jpg",
-        "especi": [
-            "Intel Core i7 8th Gen",
-            "Quad Core 1.8 GHz Clock Speed",
-            "16 GB DDR4 RAM",
-            "512 GB SSD",
-            "13.3 inches, 1920 x 1080 pixels, Touch Screen",
-            "Windows 10 OS",
-            "Backlit Keyboard",
-            "2 USB 3.0 Ports"
-        ]
+        "nombre_procesador": "Intel Core i7 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 16,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 512,
+        "so": "windows"
     },
     {
-        "nombre": "Lenovo Ideapad 330 (81D600CHIN) Laptop (AMD Dual Core A4/ 4GB/ 1TB/ Win10)",
-        "marca": "Lenovo",
-        "precio": "20699",
-        "imagen": "https://cdn1.smartprix.com/rx-iH5qVKjay-w103-h125/lenovo-ideapad-330-8.jpg",
-        "especi": [
-            " AMD A4-9120",
-            "Dual Core 2.2 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "AMD Radeon R2",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "HP 15-DA0073TX (4TT05PA) Laptop (7th Gen Ci3/ 4GB/ 1TB/ FreeDOS/ 2GB Graph)",
-        "marca": "HP",
-        "precio": "34790",
-        "imagen": "https://cdn1.smartprix.com/rx-iKbHqG0rp-w103-h125/hp-15-da0073tx-4tt05.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "Dual Core 2.3 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "2 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "DOS OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Asus Vivobook X510UN-EJ460T Laptop (8th Gen Ci5/ 8GB/ 1TB/ 256GB SSD/ Win10/ 2GB Graph)",
-        "marca": "Asus",
-        "precio": "61100",
-        "imagen": "https://cdn1.smartprix.com/rx-in89opSVz-w103-h125/asus-vivobook-x510un.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "256 GB SSD",
-            "2 GB NVIDIA Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS"
-        ]
-    },
-    {
-        "nombre": "Lenovo Ideapad 330 (81DC00HEIN) Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
-        "marca": "Lenovo",
-        "precio": "28768",
-        "imagen": "https://cdn1.smartprix.com/rx-ia8QgzilW-w103-h125/lenovo-ideapad-330-8.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "Dual Core 2.3 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "512 MB Intel Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
-    },
-    {
-        "nombre": "Dell Inspiron 3576 Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10/ 2GB Graph)",
+        "nombre": "Dell 3573 Laptop (8th Gen Pentium Quad Core/ 4GB/ 1TB/ Win10)",
         "marca": "Dell",
-        "precio": "37890",
-        "imagen": "https://cdn1.smartprix.com/rx-iBSxeNgIW-w103-h125/dell-inspiron-3576-l.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "Dual Core 2.3 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "2 GB AMD Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 Year Warranty"
-        ]
+        "precio": "25000",
+        "imagen": "https://cdn1.smartprix.com/rx-itKYacj9j-w103-h125/dell-3573-laptop-8th.jpg",
+        "nombre_procesador": " Intel Pentium 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Asus TUF FX705DY-AU027T Gaming Laptop (Ryzen 5 Quad Core/ 8GB/ 1TB/ Win10 Home/ 4GB Graph)",
+        "marca": "Asus",
+        "precio": "63990",
+        "imagen": "https://cdn1.smartprix.com/rx-iaATRUrw4-w103-h125/asus-tuf-fx705dy-au0.jpg",
+        "nombre_procesador": "AMD Ryzen 5",
+        "marca_procesador": "amd",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
         "nombre": "HP Pavilion 15-cs1000tx (5FP53PA) Laptop (8th Gen Ci5/ 8GB/ 1TB/ Win10/ 2GB Graph)",
         "marca": "HP",
-        "precio": "61800",
+        "precio": "61390",
         "imagen": "https://cdn1.smartprix.com/rx-iSzF29daZ-w103-h125/hp-pavilion-15-cs100.jpg",
-        "especi": [
-            "Intel Core i5 8th Gen",
-            "Quad Core 1.6 GHz Clock Speed",
-            "8 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "2 GB  Graphics Card",
-            "15.6 inches, 1920 x 1080 pixels",
-            "Windows 10 OS",
-            "1 USB 3.0 Ports"
-        ]
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
     },
     {
-        "nombre": "HP 15q-ds0016TU (4ZD77PA) Laptop (7th Gen Ci3/ 4GB/ 1TB/ FreeDOS)",
+        "nombre": "HP 15-da0327tu (5AY25PA) Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
         "marca": "HP",
+        "precio": "32400",
+        "imagen": "https://cdn1.smartprix.com/rx-iUVB4su5o-w103-h125/hp-15-da0327tu-5ay25.jpg",
+        "nombre_procesador": "Intel Core i3 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Lenovo Ideapad 330-15IKB (81DE0088IN) Laptop (8th Gen Ci5/ 8GB/ 2TB/ FreeDOS/ 2GB Graph)",
+        "marca": "Lenovo",
+        "precio": "44899",
+        "imagen": "https://cdn1.smartprix.com/rx-ilaJvW9nL-w103-h125/lenovo-ideapad-330-1.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 2000,
+        "so": "dos"
+    },
+    {
+        "nombre": "Lenovo Ideapad 130-14IKB (81H6000EIN) Laptop (8th Gen Ci5/ 4GB/ 1TB/ Win10 Home)",
+        "marca": "Lenovo",
+        "precio": "36490",
+        "imagen": "https://cdn1.smartprix.com/rx-iSdGdkBqi-w103-h125/lenovo-ideapad-130-1.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "ASUS VivoBook R542UQ-DM275T Laptop (8th Gen Ci7/ 8GB/ 1TB/ Win10/ 2GB Graph)",
+        "marca": "ASUS",
+        "precio": "56490",
+        "imagen": "https://cdn1.smartprix.com/rx-iyDF5RbKW-w103-h125/asus-vivobook-r542uq.jpg",
+        "nombre_procesador": "Intel Core i7 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Apple MacBook Air MQD32HN/A Laptop (Ci5/ 8GB/ 128GB/ MacOS Sierra)",
+        "marca": "Apple",
+        "precio": "69990",
+        "imagen": "https://cdn1.smartprix.com/rx-iv9zmdsLG-w103-h125/apple-macbook-air-mq.jpg",
+        "nombre_procesador": "Intel Core i5 5th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr3",
+        "almacenamiento": 128,
+        "so": "mac"
+    },
+    {
+        "nombre": "Lenovo Ideapad C340 Laptop (8th Gen Core i5/ 8GB/ 512GB SSD/ Win10)",
+        "marca": "Lenovo",
+        "precio": "48299",
+        "imagen": "https://cdn1.smartprix.com/rx-iCeZUjlJX-w103-h125/lenovo-ideapad-c340.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 512,
+        "so": "windows"
+    },
+    {
+        "nombre": "Acer Nitro 5 AN515-41 (UN.Q2USI.001) Laptop (7th Gen AMD Quad Core FX/ 8GB/ 1TB/ Win10/ 4GB Graph)",
+        "marca": "Acer",
+        "precio": "50499",
+        "imagen": "https://cdn1.smartprix.com/rx-iWn45tiYj-w103-h125/acer-nitro-5-an515-4.jpg",
+        "nombre_procesador": " AMD FX-9830P 7th Gen",
+        "marca_procesador": "amd",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Asus F570ZD-DM226T Laptop (Ryzen 5 Quad Core/ 8GB/ 1TB/ Win10/ 4GB Graph)",
+        "marca": "Asus",
+        "precio": "51000",
+        "imagen": "https://cdn1.smartprix.com/rx-iNkYmtvZh-w103-h125/asus-f570zd-dm226t-l.jpg",
+        "nombre_procesador": " Ryzen 5",
+        "marca_procesador": "ryzen",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Dell Alienware M15 Laptop (8th Gen Ci7/ 16GB/ 1TB/ Win10/ 8GB Graph)",
+        "marca": "Dell",
+        "precio": "229999",
+        "imagen": "https://cdn1.smartprix.com/rx-i2D4mxVEY-w103-h125/dell-alienware-m15-l.jpg",
+        "nombre_procesador": "Intel Core i7 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 16,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "HP 15q-dy0004AU (5JS20PA) Laptop (AMD Ryzen 3/ 4GB/ 1TB/ Win10)",
+        "marca": "HP",
+        "precio": "28999",
+        "imagen": "https://cdn1.smartprix.com/rx-iwOTRylGO-w103-h125/hp-15q-dy0004au-5js2.jpg",
+        "nombre_procesador": " AMD Ryzen 3",
+        "marca_procesador": "amd",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "HP 14q-cs0009TU (5DZ92PA) Laptop (7th Gen Ci3/ 4GB/ 1TB/ FreeDOS)",
+        "marca": "HP",
+        "precio": "25990",
+        "imagen": "https://cdn1.smartprix.com/rx-iSVCvx3yq-w103-h125/hp-14q-cs0009tu-5dz9.jpg",
+        "nombre_procesador": "Intel Core i3 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "dos"
+    },
+    {
+        "nombre": "HP 15q-ds0010TU (4TT19PA) Laptop (8th Gen Ci5/ 8GB/ 1TB/ Win10 Home)",
+        "marca": "HP",
+        "precio": "44990",
+        "imagen": "https://cdn1.smartprix.com/rx-iJSTCaxeZ-w103-h125/hp-15q-ds0010tu-4tt1.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "HP 15-da0326tu (5AY34PA) Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
+        "marca": "HP",
+        "precio": "31999",
+        "imagen": "https://cdn1.smartprix.com/rx-iNsKrEQ0N-w103-h125/hp-15-da0326tu-5ay34.jpg",
+        "nombre_procesador": "Intel Core i3 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Asus Vivobook X507UA-EJ313T Laptop (7th Gen Ci3/ 4GB/ 1TB/ Win10)",
+        "marca": "Asus",
+        "precio": "28489",
+        "imagen": "https://cdn1.smartprix.com/rx-ioXkmgAFb-w103-h125/asus-vivobook-x507ua.jpg",
+        "nombre_procesador": "Intel Core i3 7th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Lenovo Ideapad 330 (81D20090IN) Laptop (Ryzen 3 Dual Core/ 4GB/ 1TB/ Win10 Home)",
+        "marca": "Lenovo",
+        "precio": "25990",
+        "imagen": "https://cdn1.smartprix.com/rx-i4jzBYXZN-w103-h125/lenovo-ideapad-330-8.jpg",
+        "nombre_procesador": " Ryzen 3",
+        "marca_procesador": "ryzen",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Asus ZenBook Pro UX580GE-E2014T Laptop (8th Gen Ci7/ 16GB/ 1TB SSD/ Win10 Home/ 4GB Graph)",
+        "marca": "Asus",
+        "precio": "181890",
+        "imagen": "https://cdn1.smartprix.com/rx-iBT2kLase-w103-h125/asus-zenbook-pro-ux5.jpg",
+        "nombre_procesador": "Intel Core i7 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 16,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Asus TUF FX504GD-E4021T Laptop (8th Gen Ci5/ 8GB/ 1TB/ Win10/ 4GB Graph)",
+        "marca": "Asus",
+        "precio": "61990",
+        "imagen": "https://cdn1.smartprix.com/rx-iceued40r-w103-h125/asus-tuf-fx504gd-e40.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Dell 3565 Notebook (APU Dual Core A9/ 8GB/ 1TB/ Win10 Home)",
+        "marca": "Dell",
         "precio": "28990",
-        "imagen": "https://cdn1.smartprix.com/rx-iUEmPswqZ-w103-h125/hp-15q-ds0016tu-4zd7.jpg",
-        "especi": [
-            "Intel Core i3 7th Gen",
-            "Dual Core 2.3 GHz Clock Speed",
-            "4 GB DDR4 RAM",
-            "1 TB Hard Disk",
-            "Intel HD 620",
-            "15.6 inches, 1366 x 768 pixels",
-            "DOS OS",
-            "1 Year Warranty"
-        ]
+        "imagen": "https://cdn1.smartprix.com/rx-i3ye9hM4V-w103-h125/dell-3565-notebook-a.jpg",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "nombre_procesador": "AMD Radeon R5",
+        "marca_procesador": "amd",
+        "so": "windows"
+    },
+    {
+        "nombre": "HP 240 G6 (2VY24PA) Laptop (6th Gen Ci3/ 4GB/ 1TB/ FreeDOS)",
+        "marca": "HP",
+        "precio": "24999",
+        "imagen": "https://cdn1.smartprix.com/rx-ilfqyfpjQ-w103-h125/hp-240-g6-2vy24pa-la.jpg",
+        "nombre_procesador": "Intel Core i3 6th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "dos"
+    },
+    {
+        "nombre": "Dell Inspiron 7570 Laptop (8th Gen Ci7/ 8GB/ 1TB 256GB SSD/ Win10/ 4GB Graph)",
+        "marca": "Dell",
+        "precio": "78999",
+        "imagen": "https://cdn1.smartprix.com/rx-iZEmQaWfT-w103-h125/dell-inspiron-7570-l.jpg",
+        "nombre_procesador": "Intel Core i7 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "HP 245 G6 (2UE06PA) Laptop (7th Gen AMD A9/ 4GB/ 1TB/ FreeDOS)",
+        "marca": "HP",
+        "precio": "20799",
+        "imagen": "https://cdn1.smartprix.com/rx-iJMw7eP9L-w103-h125/hp-245-g6-2ue06pa-la.jpg",
+        "nombre_procesador": "AMD A9 7th Gen",
+        "marca_procesador": "amd",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "dos"
+    },
+    {
+        "nombre": "Asus ROG Mothership GZ700GX Gaming Laptop (8th Gen Core i9/ 64GB/ 512GB SSD/ Win10/ 8GB Graph)",
+        "marca": "Asus",
+        "precio": "349999",
+        "imagen": "https://cdn1.smartprix.com/rx-ip16Lnt9k-w103-h125/asus-rog-mothership.jpg",
+        "nombre_procesador": "Intel Core i9 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 64,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 512,
+        "so": "windows"
+    },
+    {
+        "nombre": "Huawei Honor Magicbook Notebook (Ryzen 5 2500U/ 8GB/ 256GB SSD/ Win10/ 2GB Graph)",
+        "marca": "Huawei",
+        "precio": "49168",
+        "imagen": "https://cdn1.smartprix.com/rx-ia0sFbc0T-w103-h125/huawei-honor-magicbo.jpg",
+        "nombre_procesador": "AMD Ryzen 5",
+        "marca_procesador": "amd",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 256,
+        "so": "windows"
+    },
+    {
+        "nombre": "HP 14s-cf0055tu (5RE07PA) Laptop (7th Gen Core i3/ 4GB/ 1TB/ Win10)",
+        "marca": "HP",
+        "precio": "37490",
+        "imagen": "https://cdn1.smartprix.com/rx-ihpZrPCAu-w103-h125/hp-14s-cf0055tu-5re0.jpg",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Acer Aspire 3 A315-33 (UN.GY3SI.002) Laptop (Celeron Dual Core/ 2GB/ 500GB/ Win10 Home)",
+        "marca": "Acer",
+        "precio": "16990",
+        "imagen": "https://cdn1.smartprix.com/rx-iWjjA2Idm-w103-h125/acer-aspire-3-a315-3.jpg",
+        "nombre_procesador": "Intel Celeron",
+        "marca_procesador": "intel",
+        "capacidad_ram": 2,
+        "tipo_ram": "ddr3",
+        "almacenamiento": 500,
+        "so": "windows"
+    },
+    {
+        "nombre": "Dell Inspiron 14 5482 Laptop (8th Gen Core i3/ 4GB/ 1TB/ Win10)",
+        "marca": "Dell",
+        "precio": "53999",
+        "imagen": "https://cdn1.smartprix.com/rx-iTaXKMSwn-w103-h125/dell-inspiron-14-548.jpg",
+        "nombre_procesador": "Intel Core i3 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Lenovo Ideapad 330 (81FK00APIN) Laptop (8th Gen Ci5/ 8GB/ 1TB/ Win10 Home/ 2GB Graph)",
+        "marca": "Lenovo",
+        "precio": "58244",
+        "imagen": "https://cdn1.smartprix.com/rx-iimxRxYyg-w103-h125/lenovo-ideapad-330-8.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Acer Aspire 3 A315-53 (NX.H38SI.002) Laptop (8th Gen Ci3/ 4GB/ 1TB/ Win10 Home)",
+        "marca": "Acer",
+        "precio": "28490",
+        "imagen": "https://cdn1.smartprix.com/rx-iOWoDnUwb-w103-h125/acer-aspire-3-a315-5.jpg",
+        "nombre_procesador": "Intel Core i3 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Lenovo Yoga Book 730 (81CU002CIN) Laptop (8th Gen Core i7/ 16GB/ 512GB SSD/ Win10/ 4GB Graph)",
+        "marca": "Lenovo",
+        "precio": "140697",
+        "imagen": "https://cdn1.smartprix.com/rx-iQ66al7YZ-w103-h125/lenovo-yoga-book-730.jpg",
+        "nombre_procesador": "Intel Core i7 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 16,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 512,
+        "so": "windows"
+    },
+    {
+        "nombre": "Acer Aspire 5 A515-51 (UN.GSZSI.005) Laptop (8th Gen Ci5/ 4GB/ 1TB/ Win 10)",
+        "marca": "Acer",
+        "precio": "37900",
+        "imagen": "https://cdn1.smartprix.com/rx-iBLlaoTnW-w103-h125/acer-aspire-5-a515-5.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 4,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Acer Swift 3 SF315-52G (NX.H1NSI.001) Laptop (8th Gen Ci5/ 8GB/ 1TB/ Win10)",
+        "marca": "Acer",
+        "precio": "56799",
+        "imagen": "https://cdn1.smartprix.com/rx-iwYrjlpuB-w103-h125/acer-swift-3-sf315-5.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 1000,
+        "so": "windows"
+    },
+    {
+        "nombre": "Dell Inspiron 5580 laptop (8th Gen Ci5/ 8GB/ 2TB/ Win10)",
+        "marca": "Dell",
+        "precio": "54990",
+        "imagen": "https://cdn1.smartprix.com/rx-iilzZwFMF-w103-h125/dell-inspiron-5580-l.jpg",
+        "nombre_procesador": "Intel Core i5 8th Gen",
+        "marca_procesador": "intel",
+        "capacidad_ram": 8,
+        "tipo_ram": "ddr4",
+        "almacenamiento": 2000,
+        "so": "windows"
     }
 ]

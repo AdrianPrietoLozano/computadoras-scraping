@@ -2,6 +2,48 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+from separar_componentes import *
+
+
+def buscar_especificaciones(c):
+	especificaciones = c.find(class_="pros")
+	if especificaciones:
+		especificaciones = especificaciones.find_all("span")
+		especificaciones2 = c.find(class_="cons")
+		if especificaciones2:
+			especificaciones.extend(especificaciones2.find_all("span"))
+		n_especific = []
+		for e in especificaciones:
+			n_especific.append(e.text)	
+		return n_especific
+	return []
+
+
+def completar_compu(compu):
+	procesador_encontrado = False
+	storage_encontrado = False
+	for i in especificaciones:
+		if re.search("Intel.Apollo|Intel.Atom|Intel.Celeron|Intel.Core.M|Intel.Core.i\d|Intel.Pentium|AMD|Xeon|itanium|Ryzen", i, re.IGNORECASE) and procesador_encontrado == False:
+			procesador_encontrado = True
+			#print("Procesador:", i)
+			compu["nombre_procesador"] = i
+			compu["marca_procesador"] = separar_procesador(i)
+			continue
+		if re.search("RAM", i, re.IGNORECASE):
+			#print("Ram:", i)
+			compu["capacidad_ram"], compu["tipo_ram"] = separar_ram(i)
+			continue
+		if re.search("windows|apple|linux|chrome|dos|mac|ubuntu", i, re.IGNORECASE):
+			#print("Sistema operativo:", i)
+			compu["so"] = separar_so(i)
+			continue
+		if re.search("hard.disk|SSD", i, re.IGNORECASE) and storage_encontrado == False:
+			#print("Almacenamiento:", i)
+			compu["almacenamiento"] = separar_almacenamiento(i)
+			storage_encontrado = True
+			continue
+
+
 
 url_base = "https://www.smartprix.com/laptops/"
 urls = [url_base]
@@ -34,7 +76,32 @@ for pagina in urls:
 	        "marca": c.find(class_="info").h2.a.text.split(" ")[0],
 	        "precio": c.find(class_="price").text.replace("₹", "").replace(",", ""),
 	        "imagen": c.img["src"]
-	        }
+	    	}
+		especificaciones = buscar_especificaciones(c)
+		
+		if(especificaciones):
+			completar_compu(compu)
+			lista.append(compu)
+			
+	contador += 1
+
+print(len(lista))
+
+with open("computadoras.json", "w") as archivo:
+	json.dump(lista, archivo, sort_keys=False, indent=4)
+
+
+
+#print(len(computadoras))
+"""
+computadoras = soup.find_all(class_="f-laptops")
+print(len(computadoras))
+"""
+
+
+
+
+"""
 		especificaciones = c.find(class_="pros")
 		if especificaciones:
 			especificaciones = especificaciones.find_all("span")
@@ -44,43 +111,4 @@ for pagina in urls:
 			n_especific = []
 
 			for e in especificaciones:
-				n_especific.append(e.text)
-
-			compu["especi"] = n_especific
-
-			print()
-			proce_encontrado = False
-			storage_encontrado = False
-			for i in n_especific:
-				if re.search("Intel.Apollo|Intel.Atom|Intel.Celeron|Intel.Core.M|Intel.Core.i\d|Intel.Pentium|AMD|Xeon|itanium|Ryzen", i, re.IGNORECASE) and proce_encontrado == False:
-					proce_encontrado = True
-					print("Procesador:", i)
-					continue
-				if re.search("RAM", i, re.IGNORECASE):
-					print("Ram:", i)
-					continue
-				if re.search("windows|apple|linux|chrome|dos|mac|ubuntu", i, re.IGNORECASE):
-					print("Sistema operativo:", i)
-					continue
-				if re.search("hard.disk|SSD", i, re.IGNORECASE) and storage_encontrado == False:
-					print("Almacenamiento:", i)
-					storage_encontrado = True
-					continue
-			print()
-
-			lista.append(compu)
-			print(compu)
-	contador += 1
-
-print(len(lista))
-
-with open("computadoras.json", "w") as archivo:
-    json.dump(lista, archivo, sort_keys=False, indent=4)
-
-
-
-#print(len(computadoras))
-"""
-computadoras = soup.find_all(class_="f-laptops")
-print(len(computadoras))
-"""
+				n_especific.append(e.text)"""
