@@ -26,7 +26,7 @@ def completar_compu(compu):
 		if re.search("Intel.Apollo|Intel.Atom|Intel.Celeron|Intel.Core.M|Intel.Core.i\d|Intel.Pentium|AMD|Xeon|itanium|Ryzen", i, re.IGNORECASE) and procesador_encontrado == False:
 			procesador_encontrado = True
 			#print("Procesador:", i)
-			compu["nombre_procesador"] = i
+			compu["nombre_procesador"] = i.strip()
 			compu["marca_procesador"] = separar_procesador(i)
 			continue
 		if re.search("RAM", i, re.IGNORECASE):
@@ -78,7 +78,7 @@ for pagina in urls:
 	        "imagen": c.img["src"]
 	    	}
 		especificaciones = buscar_especificaciones(c)
-		
+
 		if(especificaciones):
 			completar_compu(compu)
 			lista.append(compu)
@@ -89,26 +89,3 @@ print(len(lista))
 
 with open("computadoras.json", "w") as archivo:
 	json.dump(lista, archivo, sort_keys=False, indent=4)
-
-
-
-#print(len(computadoras))
-"""
-computadoras = soup.find_all(class_="f-laptops")
-print(len(computadoras))
-"""
-
-
-
-
-"""
-		especificaciones = c.find(class_="pros")
-		if especificaciones:
-			especificaciones = especificaciones.find_all("span")
-			especificaciones2 = c.find(class_="cons")
-			if especificaciones2:
-				especificaciones.extend(especificaciones2.find_all("span"))
-			n_especific = []
-
-			for e in especificaciones:
-				n_especific.append(e.text)"""
