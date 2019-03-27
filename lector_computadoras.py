@@ -32,7 +32,7 @@ def buscar_procesador(nombre, marca):
 
 def insertar_procesador(nombre, marca):
 	insert = "INSERT INTO procesador(nombre, marca) VALUES(%s, %s)"
-	cursor.execute(insert, (nombre, marca))
+	cursor.execute(insert, (nombre.strip(), marca))
 	conexion.commit()
 	return cursor.lastrowid
 
@@ -81,25 +81,37 @@ with open(files[0]) as f:
 for computadora in computadoras:
 	
 	#RAM
-	rows = buscar_ram(computadora["tipo_ram"], computadora["capacidad_ram"])
-	if len(rows) == 0: # no existe la ram en la BD
-		id_ram = insertar_ram(computadora["tipo_ram"], computadora["capacidad_ram"])
-	else: # ya existe la ram
-		id_ram = rows[0][0]
+	try:
+		rows = buscar_ram(computadora["tipo_ram"], computadora["capacidad_ram"])
+		if len(rows) == 0: # no existe la ram en la BD
+			id_ram = insertar_ram(computadora["tipo_ram"], computadora["capacidad_ram"])
+		else: # ya existe la ram
+			id_ram = rows[0][0]
+	except Exception as e:
+		print("Error:", computadora["tipo_ram"])
+		continue
 
 	#SO
-	rows = buscar_so(computadora["so"])
-	if len(rows) == 0: # no existe el sistema operativo en la BD
-		id_so = insertar_so(computadora["so"])
-	else: # ya existe el SO
-		id_so = rows[0][0]
+	try:
+		rows = buscar_so(computadora["so"])
+		if len(rows) == 0: # no existe el sistema operativo en la BD
+			id_so = insertar_so(computadora["so"])
+		else: # ya existe el SO
+			id_so = rows[0][0]
+	except Exception as e:
+		print("Error:", computadora["so"])
+		continue
 
 	#ALMACENAMIENTO
-	rows = buscar_almacenamiento(computadora["almacenamiento"])
-	if len(rows) == 0: # no existe el almacenamiento en la BD
-		id_almacenamiento = insertar_almacenamiento(computadora["almacenamiento"])
-	else: # ya existe el SO
-		id_almacenamiento = rows[0][0]
+	try:
+		rows = buscar_almacenamiento(computadora["almacenamiento"])
+		if len(rows) == 0: # no existe el almacenamiento en la BD
+			id_almacenamiento = insertar_almacenamiento(computadora["almacenamiento"])
+		else: # ya existe el SO
+			id_almacenamiento = rows[0][0]
+	except Exception as e:
+		print("Error:", computadora["imagen"])
+		continue
 
 	#PROCESADOR
 	try:
@@ -120,6 +132,7 @@ for computadora in computadoras:
 							id_so,
 							id_almacenamiento,
 							id_procesador)
+	
 	if len(rows) == 0: # no existe la computadora en la BD
 		id_computadora = insertar_computadora(computadora["nombre"],
 											computadora["marca"],

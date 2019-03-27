@@ -5,6 +5,9 @@ import re
 from separar_componentes import *
 
 
+TOTAL_COMPUTADORAS = 500
+
+
 def buscar_especificaciones(c):
 	especificaciones = c.find(class_="pros")
 	if especificaciones:
@@ -49,22 +52,23 @@ url_base = "https://www.smartprix.com/laptops/"
 urls = [url_base]
 
 
+"""
 for i in range(2, 100):
 	url = url_base + "?page=" + str(i)
 	urls.append(url)
+"""
 
 lista = []
 contador = 1
-for pagina in urls:
-	print()
-	print(contador)
-	print()
+while len(lista) < TOTAL_COMPUTADORAS:
 	try:
-		r = requests.get(pagina)
+		r = requests.get(url_base + "?page=" + str(contador))
 		r.encoding = "utf-8"
 	except Exception as e:
 		print("break")
 		break
+
+	print(contador)
 
 	soup = BeautifulSoup(r.text, "html.parser")
 	lista_compus = soup.find(class_="list-content")
@@ -75,7 +79,13 @@ for pagina in urls:
 	        "nombre": c.find(class_="info").h2.a.text,
 	        "marca": c.find(class_="info").h2.a.text.split(" ")[0],
 	        "precio": c.find(class_="price").text.replace("₹", "").replace(",", ""),
-	        "imagen": c.img["src"]
+	        "imagen": c.img["src"],
+	        "nombre_procesador": "N/A",
+	        "marca_procesador": "N/A",
+	        "so": "N/A",
+	        "almacenamiento": "-1",
+	        "capacidad_ram": "-1",
+	        "tipo_ram": "N/A"
 	    	}
 		especificaciones = buscar_especificaciones(c)
 
@@ -85,7 +95,7 @@ for pagina in urls:
 			
 	contador += 1
 
-print(len(lista))
+print("Total:", len(lista))
 
 with open("computadoras.json", "w") as archivo:
 	json.dump(lista, archivo, sort_keys=False, indent=4)
