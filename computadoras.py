@@ -51,7 +51,6 @@ def completar_compu(compu):
 url_base = "https://www.smartprix.com/laptops/"
 urls = [url_base]
 
-
 """
 for i in range(2, 100):
 	url = url_base + "?page=" + str(i)
@@ -60,6 +59,12 @@ for i in range(2, 100):
 
 lista = []
 contador = 1
+
+r = requests.get("https://es.coinmill.com/INR_MXN.html?INR=1")
+soup = BeautifulSoup(r.text, "html.parser")
+conversion = float(soup.find_all("input", {"class":"currencyField"})[1]["value"])
+print(conversion)
+
 while len(lista) < TOTAL_COMPUTADORAS:
 	try:
 		r = requests.get(url_base + "?page=" + str(contador))
@@ -78,7 +83,7 @@ while len(lista) < TOTAL_COMPUTADORAS:
 		compu = {
 	        "nombre": c.find(class_="info").h2.a.text,
 	        "marca": c.find(class_="info").h2.a.text.split(" ")[0],
-	        "precio": c.find(class_="price").text.replace("₹", "").replace(",", ""),
+	        "precio": float(c.find(class_="price").text.replace("₹", "").replace(",", "")) * conversion,
 	        "imagen": c.img["src"],
 	        "nombre_procesador": "N/A",
 	        "marca_procesador": "N/A",

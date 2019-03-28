@@ -1,6 +1,7 @@
 import glob
 import json
 import mysql.connector
+import requests
 
 
 def buscar_ram(tipo, capacidad):
@@ -132,7 +133,7 @@ for computadora in computadoras:
 							id_so,
 							id_almacenamiento,
 							id_procesador)
-	
+
 	if len(rows) == 0: # no existe la computadora en la BD
 		id_computadora = insertar_computadora(computadora["nombre"],
 											computadora["marca"],
@@ -141,6 +142,11 @@ for computadora in computadoras:
 											id_so,
 											id_almacenamiento,
 											id_procesador)
+
+		nombre_local_imagen = "Imágenes/" + str(cursor.lastrowid) + ".jpg" # El nombre con el que queremos guardarla
+		imagen = requests.get(computadora["imagen"]).content
+		with open(nombre_local_imagen, 'wb') as handler:
+			handler.write(imagen)
 	else: # si ya existe la computadora se actualiza el precio
 		id_computadora = rows[0][0]
 		actualizar_precio(id_computadora, computadora["precio"])
