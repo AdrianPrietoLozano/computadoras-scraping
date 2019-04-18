@@ -39,7 +39,7 @@ def separar_almacenamiento(cadena):
 def separar_procesador(cadena):
 	cadena = cadena.lower()
 	marca = "N/A"
-	m = re.search("intel|amd|xeon|itanium|ryzen", cadena, re.IGNORECASE)
+	m = re.search("intel|amd|xeon|itanium", cadena, re.IGNORECASE)
 	if(m):
 		cadena = m.group(0)
 	return cadena

@@ -4,9 +4,88 @@ import json
 import re
 from separar_componentes import *
 
+"""
+procesadores = [
+"Intel Core i9 9th Gen",
+"AMD A4-9125",
+"AMD A9 APU",
+"Intel Core i5 8th Gen",
+"Intel Core i3 7th Gen",
+"Ryzen 5",
+"Intel Core i7 8th Gen",
+"Intel Core i5 7th Gen",
+"Intel Core i3 8th Gen",
+"AMD APU A6",
+"Intel Core i3 6th Gen",
+"AMD Ryzen 5",
+"N/A",
+"Intel Pentium 8th Gen",
+"Intel Core i5 5th Gen",
+"Intel Core i9 8th Gen",
+"AMD Ryzen 3",
+"AMD A9 7th Gen",
+"Intel Core i7 6th Gen",
+"AMD A6-9210",
+"AMD APU",
+"AMD Radeon R5",
+"AMD A6 APU 7th Gen",
+"Ryzen 3",
+"AMD APU E2 E2-6110",
+"AMD AMD A9-9425",
+"Intel Pentium Intel Pentium N4200",
+"Intel Celeron",
+"AMD APU A4",
+"AMD A4-9120",
+"2 GB AMD Graphics Card",
+"Intel Core i7 7th Gen",
+"AMD Dual Core E2 9000",
+"AMD Ryzen 5 AMD Ryzen 5 3550H",
+"AMD AMD A4-9120C",
+"Intel Pentium Gold",
+"Intel Atom Z8350",
+"Intel Atom",
+"Intel Core i5 8250U 8th Gen",
+"Intel Core i5 8300H 8th Gen",
+"Intel Atom QuadCore X5 Z8300",
+"4 GB AMD Graphics Card",
+"AMD Radeon R2",
+"AMD A12 APU",
+"Intel Pentium",
+"Intel Pentium N4200",
+"Intel Apollo Lake Intel Apollo Lake N3450",
+"Intel Celeron Intel Celeron N3350",
+"Intel Celeron 4th Gen",
+"AMD E2-9000e",
+"AMD APU E2",
+"Intel Core M3 8th Gen",
+"Intel Celeron N4000",
+"AMD AMD A4",
+"AMD AMD A9425",
+"Intel Celeron 3855U",
+"Dual Core Ryzen 5",
+"Intel Core M3-7Y32 7th Gen",
+"AMD Ryzen 5 2500U",
+"AMD APU A4-9120",
+"AMD A6-9225",
+"AMD APU A9",
+"Intel Pentium 4415U 7th Gen",
+"Intel Apollo Lake Celeron",
+"Intel Celeron Celeron Dual Core",
+"AMD E2-9000",
+"Intel Pentium N5000",
+"AMD A9-9425",
+"Intel Atom 7th Gen",
+"Intel Celeron Dual Core N4000",
+"Intel Core m3 7th Gen",
+"Intel Celeron N3450",
+"AMD APU FX"]
+"""
 
 TOTAL_COMPUTADORAS = 500
 
+
+expresion = "Intel.Core.i\d|Intel.Atom|Intel.Celeron|Intel.Pentium|Intel.Apollo"\
+			"AMD.APU.Ad|AMD.\S\d|AMD.Ryzen.\d|Ryzen \d"
 
 def buscar_especificaciones(c):
 	especificaciones = c.find(class_="pros")
@@ -26,11 +105,17 @@ def completar_compu(compu):
 	procesador_encontrado = False
 	storage_encontrado = False
 	for i in especificaciones:
-		if re.search("Intel.Apollo|Intel.Atom|Intel.Celeron|Intel.Core.M|Intel.Core.i\d|Intel.Pentium|AMD|Xeon|itanium|Ryzen", i, re.IGNORECASE) and procesador_encontrado == False:
+		resultado = re.search(expresion, i, re.IGNORECASE)
+		if resultado and procesador_encontrado == False:
 			procesador_encontrado = True
-			#print("Procesador:", i)
+			procesador_simple = resultado.group(0)
+
+			if re.search("^Ryzen", procesador_simple, re.IGNORECASE):
+				procesador_simple = "AMD " + procesador_simple; 
+
 			compu["nombre_procesador"] = i.strip()
-			compu["marca_procesador"] = separar_procesador(i)
+			compu["procesador_reducido"] = procesador_simple
+			compu["marca_procesador"] = separar_procesador(procesador_simple)
 			continue
 		if re.search("RAM", i, re.IGNORECASE):
 			#print("Ram:", i)
@@ -51,11 +136,6 @@ def completar_compu(compu):
 url_base = "https://www.smartprix.com/laptops/"
 urls = [url_base]
 
-"""
-for i in range(2, 100):
-	url = url_base + "?page=" + str(i)
-	urls.append(url)
-"""
 
 lista = []
 contador = 1
@@ -87,6 +167,7 @@ while len(lista) < TOTAL_COMPUTADORAS:
 	        "imagen": c.img["src"],
 	        "nombre_procesador": "N/A",
 	        "marca_procesador": "N/A",
+	        "procesador_reducido": "N/A",
 	        "so": "N/A",
 	        "almacenamiento": "-1",
 	        "capacidad_ram": "-1",

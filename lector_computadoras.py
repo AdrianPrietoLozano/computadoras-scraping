@@ -31,9 +31,9 @@ def buscar_procesador(nombre, marca):
 	cursor.execute(select, (nombre, marca))
 	return cursor.fetchall()
 
-def insertar_procesador(nombre, marca):
-	insert = "INSERT INTO procesador(nombre, marca) VALUES(%s, %s)"
-	cursor.execute(insert, (nombre.strip(), marca))
+def insertar_procesador(nombre, marca, nombre_reducido):
+	insert = "INSERT INTO procesador(nombre, marca, nombre_reducido) VALUES(%s, %s, %s)"
+	cursor.execute(insert, (nombre.strip(), marca, nombre_reducido))
 	conexion.commit()
 	return cursor.lastrowid
 
@@ -118,10 +118,13 @@ for computadora in computadoras:
 	try:
 		rows = buscar_procesador(computadora["nombre_procesador"], computadora["marca_procesador"])
 		if len(rows) == 0: # no existe el procesador en la BD
-			id_procesador = insertar_procesador(computadora["nombre_procesador"], computadora["marca_procesador"])
+			id_procesador = insertar_procesador(computadora["nombre_procesador"],
+												computadora["marca_procesador"],
+												computadora["procesador_reducido"])
 		else: # ya existe el SO
 			id_procesador = rows[0][0]
 	except Exception as e:
+		print(e)
 		print("Esta computadora no tiene procesador. No se agregará")
 		continue
 
@@ -143,10 +146,14 @@ for computadora in computadoras:
 											id_almacenamiento,
 											id_procesador)
 
-		nombre_local_imagen = "Imágenes/" + str(cursor.lastrowid) + ".jpg" # El nombre con el que queremos guardarla
-		imagen = requests.get(computadora["imagen"]).content
-		with open(nombre_local_imagen, 'wb') as handler:
-			handler.write(imagen)
+		nombre_local_imagen = "imagenes/" + str(cursor.lastrowid) + ".jpg" # El nombre con el que queremos guardarla
+		try:
+			imagen = requests.get(computadora["imagen"]).content
+			with open(nombre_local_imagen, 'wb') as handler:
+				handler.write(imagen)
+		except Exception as e:
+			print("No se pudo descargar la imagen")
+			continue
 	else: # si ya existe la computadora se actualiza el precio
 		id_computadora = rows[0][0]
 		actualizar_precio(id_computadora, computadora["precio"])
