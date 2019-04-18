@@ -12,7 +12,8 @@ CREATE TABLE ram(
 CREATE TABLE procesador(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nombre VARCHAR(50),
-	marca VARCHAR(25)
+	marca VARCHAR(25),
+	nombre_reducido VARCHAR(50)
 );
 
 CREATE TABLE sistema_operativo(
@@ -45,5 +46,11 @@ CREATE TABLE computadora(
 CREATE TABLE recomendados(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	id_computadora INT,
+	FOREIGN KEY(id_computadora) REFERENCES computadora(id)
+);
+
+CREATE TABLE estadisticas(
+	id_computadora INT,
+	contador INT,
 	FOREIGN KEY(id_computadora) REFERENCES computadora(id)
 );
