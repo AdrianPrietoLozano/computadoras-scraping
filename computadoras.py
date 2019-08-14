@@ -142,7 +142,7 @@ contador = 1
 
 r = requests.get("https://es.coinmill.com/INR_MXN.html?INR=1")
 soup = BeautifulSoup(r.text, "html.parser")
-conversion = float(soup.find_all("input", {"class":"currencyField"})[1]["value"])
+conversion = 0.26 #float(soup.find_all("input", {"class":"currencyField"})[1]["value"])
 print(conversion)
 
 while len(lista) < TOTAL_COMPUTADORAS:
@@ -163,7 +163,7 @@ while len(lista) < TOTAL_COMPUTADORAS:
 		compu = {
 	        "nombre": c.find(class_="info").h2.a.text,
 	        "marca": c.find(class_="info").h2.a.text.split(" ")[0],
-	        "precio": float(c.find(class_="price").text.replace("₹", "").replace(",", "")) * conversion,
+	        "precio": float(c.find(class_="price").text.replace("₹", "").replace(",", "").replace("Lacs", "")) * conversion,
 	        "imagen": c.img["src"],
 	        "nombre_procesador": "N/A",
 	        "marca_procesador": "N/A",
@@ -177,7 +177,8 @@ while len(lista) < TOTAL_COMPUTADORAS:
 
 		if(especificaciones):
 			completar_compu(compu)
-			lista.append(compu)
+			if compu["precio"] > 1000 and len(lista) < TOTAL_COMPUTADORAS: # esto debido a que hay computadoras con error en el precio
+				lista.append(compu)
 			
 	contador += 1
 
